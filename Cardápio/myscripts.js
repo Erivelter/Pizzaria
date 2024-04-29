@@ -48,3 +48,20 @@ function criarPizza(pizza) {
 
 // Itera sobre a lista de pizzas e cria clones para cada uma
 pizzas.forEach(criarPizza);
+
+//Botão do menu
+const menu = document.getElementById("menu");
+const menuMobile = document.getElementById("MobileMenu");
+const menuTela = document.getElementById("menuTela");
+menu.addEventListener("click", btnMenu);
+menuMobile.addEventListener("click", btnMenu);
+function btnMenu() {
+    // Verifica se o menu está atualmente visível
+    if (menuTela.style.display === "flex") {
+       
+        menuTela.style.display = "none";
+    } else {
+        
+        menuTela.style.display = "flex";
+    }
+}
