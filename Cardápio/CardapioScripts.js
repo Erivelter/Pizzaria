@@ -3,49 +3,49 @@ let contador = 1
 const pizzas = [
         {
             Nome: "Pizza de Calabressa",
-            Foto: "Image/pizza_de_calabressa-removebg-preview.png",
+            Foto: "/Pizzaria/Image/pizza_de_calabressa-removebg-preview.png",
             TextoChamativo: "Uma pizza de calabressa, servida de maneira original com sabor único feita na hora.",
             Ingredientes: "Massa de pizza (farinha de trigo, água, fermento, sal, óleo), molho de tomate (tomates, cebola, alho, azeite de oliva, sal, pimenta), queijo mussarela (leite de vaca pasteurizado, fermento lácteo, coalho, sal), linguiça calabresa (carne suína, água, sal, especiarias, conservante), cebola (opcional), orégano (opcional), azeite de oliva (opcional).",
-            Alergias: ["Image/icons8-queijo-96.png", "Image/icons8-vaca-96.png"]
+            Alergias: ["/Pizzaria/Image/icons8-queijo-96.png", "/Pizzaria/Image/icons8-vaca-96.png"]
         },
         {
             Nome: "Pizza de Margherita",
-            Foto: "Image/Pizza de Margherita.png",
+            Foto: "/Pizzaria/Image/Pizza de Margherita.png",
             TextoChamativo: "Uma deliciosa pizza de Margherita, com ingredientes frescos e sabor inigualável.",
             Ingredientes: "Massa de pizza (farinha de trigo, água, fermento, sal, óleo), molho de tomate (tomates, alho, azeite de oliva, sal, pimenta), queijo mussarela (leite de vaca pasteurizado, fermento lácteo, coalho, sal), folhas de manjericão fresco, azeite de oliva (opcional).",
-            Alergias: ["/Image/icons8-queijo-96.png", "Image/icons8-vaca-96.png"]
+            Alergias: ["/Pizzaria/Image/icons8-queijo-96.png", "/Pizzaria/Image/icons8-vaca-96.png"]
         },
         {
             Nome: "Pizza Portuguesa",
-            Foto: "Image/pizza_portuguesa.png",
+            Foto: "/Pizzaria/Image/pizza_portuguesa.png",
             TextoChamativo: "Uma pizza Portuguesa autêntica, com uma combinação perfeita de ingredientes.",
             Ingredientes: "Massa de pizza (farinha de trigo, água, fermento, sal, óleo), molho de tomate (tomates, cebola, alho, azeite de oliva, sal, pimenta), queijo mussarela (leite de vaca pasteurizado, fermento lácteo, coalho, sal), presunto, ovos cozidos, cebola, azeitonas, orégano.",
-            Alergias: ["Image/icons8-queijo-96.png", "Image/icons8-ovo-96.png"]
+            Alergias: ["/Pizzaria/Image/icons8-queijo-96.png", "/Pizzaria/Image/icons8-ovo-96.png"]
         },
         {
             Nome: "Pizza Vegetariana",
-            Foto: "Image/Pizza vegetariana.png",
+            Foto: "/Pizzaria/Image/Pizza vegetariana.png",
             TextoChamativo: "Uma opção saudável e deliciosa, repleta de vegetais frescos e saborosos.",
             Ingredientes: "Massa de pizza (farinha de trigo, água, fermento, sal, óleo), molho de tomate (tomates, cebola, alho, azeite de oliva, sal, pimenta), queijo mussarela (leite de vaca pasteurizado, fermento lácteo, coalho, sal), abobrinha, berinjela, pimentão, cebola, cogumelos, azeitonas, orégano.",
-            Alergias: ["Image/icons8-queijo-96.png", "Image/icons8-vegetariano-96.png"]
+            Alergias: ["/Pizzaria/Image/icons8-queijo-96.png", "/Pizzaria/Image/icons8-vegetariano-96.png"]
         },
         {
             Nome: "Pizza Catupiry",
-            Foto: "Image/Pizza de Catupiry.png",
+            Foto: "/Pizzaria/Image/Pizza de Catupiry.png",
             TextoChamativo: "Uma pizza cremosa e irresistível, com o autêntico sabor do Catupiry.",
             Ingredientes: "Massa de pizza (farinha de trigo, água, fermento, sal, óleo), molho de tomate (tomates, cebola, alho, azeite de oliva, sal, pimenta), queijo mussarela (leite de vaca pasteurizado, fermento lácteo, coalho, sal), catupiry, azeitonas, orégano.",
-            Alergias: ["Image/icons8-queijo-96.png", "Image/icons8-vaca-96.png"]
+            Alergias: ["/Pizzaria/Image/icons8-queijo-96.png", "/Pizzaria/Image/icons8-vaca-96.png"]
         },
         {
             Nome: "Pizza Mediterrânea",
-            Foto: "Image/pizza mediterranea.png",
+            Foto: "/Pizzaria/Image/pizza mediterranea.png",
             TextoChamativo: "Uma jornada culinária até o Mediterrâneo, com sabores frescos e autênticos.",
             Ingredientes: "Massa de pizza (farinha de trigo, água, fermento, sal, óleo), molho de tomate (tomates, alho, azeite de oliva, sal, pimenta), queijo feta, azeitonas, tomate seco, manjericão fresco, orégano.",
-            Alergias: ["Image/icons8-queijo-96.png", "Image/icons8-vegetariano-96.png"]
+            Alergias: ["/Pizzaria/Image/icons8-queijo-96.png", "/Pizzaria/Image/icons8-vegetariano-96.png"]
         },
         {
             Nome: "Em breve mais",
-            Foto: "Image/MaisIcone.png",
+            Foto: "/Pizzaria/Image/MaisIcone.png",
             TextoChamativo: "Em breve mais opções incríveis para você experimentar. Aguarde!",
             Ingredientes: "Em breve mais informações.",
             Alergias: []
@@ -173,3 +173,11 @@ function mostrarDescricao(event) {
     }
 }
 
+//Botões do menu
+
+var BtnOfertas = document.getElementById("Ofertas");
+BtnOfertas.addEventListener("click", Ofertas); // Remove the parentheses after Ofertas
+
+function Ofertas() {
+    window.location.href = "Pizzaria/Ofertas/ofertas.html";
+}

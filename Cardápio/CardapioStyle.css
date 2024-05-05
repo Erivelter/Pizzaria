@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: MyFont;
-    src: url(Dosis-Light.ttf);
+    src: url(/Pizzaria/Dosis-Light.ttf);
 }
 html{
     font-size: 62.5%;
@@ -103,7 +103,7 @@ nav {
 }
 #menuTela{
     position:absolute;
-    
+    top: 12vh;
     right: 0;
     height: 58rem;
     width: 26rem;
@@ -116,6 +116,7 @@ nav {
     padding-left: 1.5rem;
     position: fixed;
     align-items: flex-start;
+    top: 12vh;
 }
 #languege{
     height:4.5rem;
