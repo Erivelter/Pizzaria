@@ -68,3 +68,11 @@ function btnMenu() {
         menuTela.style.display = "flex";
     }
 }
+//Botões do menu
+
+var BtnContatos = document.getElementById("Contatos");
+BtnContatos.addEventListener("click", Contatos); 
+
+function Contatos() {
+    window.location.href = "/Pizzaria/Contatos/Contatos.html";
+}

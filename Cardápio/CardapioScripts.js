@@ -179,5 +179,5 @@ var BtnOfertas = document.getElementById("Ofertas");
 BtnOfertas.addEventListener("click", Ofertas); // Remove the parentheses after Ofertas
 
 function Ofertas() {
-    window.location.href = "Pizzaria/Ofertas/ofertas.html";
+    window.location.href = "/Pizzaria/Ofertas/ofertas.html";
 }

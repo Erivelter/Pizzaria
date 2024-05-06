@@ -1,0 +1,252 @@
+/* ContatosStyle.css */
+
+/* Define as variáveis de cor */
+:root {
+    --color-1: #EBA963; 
+    --color-2: #875016; 
+    --color-3: #C72100;
+    --color-4: #EDDFD1;
+    --color-5: #24662A;
+    --color-6: #D9D9D9;
+}
+
+/* Importa a fonte personalizada */
+@font-face {
+    font-family: MyFont;
+    src: url(/Pizzaria/Dosis-Light.ttf);
+}
+
+/* Define o tamanho padrão da fonte do HTML */
+html {
+    font-size: 62.5%;
+}
+
+/* Estilos gerais do corpo do documento */
+body {
+    background-color: var(--color-4);
+    margin: 0px;
+    font-family: MyFont;
+}
+
+/* Estilos da barra de navegação */
+nav {
+    background-color: var(--color-3);
+    height: 12vh;
+    width: 100%;
+    max-height: 104px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+/* Estilos do botão "Meus pedidos" */
+#BtnSeuPedido {
+    width: 33rem;
+    height: 5rem;
+    border-radius: 24px;
+    background-color: var(--color-5);
+    font-family: MyFont;
+    font-size: 4rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 9px 8px rgb(0 0 0 / 30%);
+    margin-right: 1rem;
+    transition: all 0.3s ease; 
+}
+
+#MobileMenu, #menu {
+    height: 6rem;
+    width: 5rem;
+    margin: 10px;
+    fill: white;
+    transition: all 0.3s ease;
+}
+
+#menuTela {
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    height: 58rem;
+    width: 26rem;
+    background-color: var(--color-3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    z-index: 1;
+    padding-left: 1.5rem;
+    position: fixed;
+    align-items: flex-start;
+}
+
+/* Estilos para o cabeçalho (título) */
+h1 {
+    font-family: MyFont;
+    font-size: 8rem;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10vh;
+}
+
+#languege {
+    height: 4.5rem;
+    width: 26rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#languege img {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: 1rem;
+}
+
+#menuTela h2 {
+    font-size: 3.5rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#IconLogin {
+    height: 6rem;
+    width: 6rem;
+    margin-right: 2rem;
+}
+
+#IconExit {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+}
+
+.DivLogin {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.DivExit {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Estilos para a seção de contatos */
+#Contatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 2rem;
+}
+
+/* Estilos para cada cartão de contato */
+.Contato  {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: var(--color-6);
+    border: 1rem solid var(--color-3);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 13px 9px gray;
+    transition: all 0.3s ease;
+}
+.Local  {
+    width: 60rem;
+    height: 26rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: var(--color-6);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 13px 9px gray;
+    transition: all 0.3s ease;
+    border: 1rem solid var(--color-5);
+}
+/* Estilos para a imagem do contato */
+.Contato img{
+    width: 80%;
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+.Local img {
+    width: 80%;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para o nome do contato */
+.Contato h3, .Local {
+    font-family: MyFont;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para o número de telefone do contato */
+.Contato p, .Local {
+    font-family: MyFont;
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+.Contato:hover{
+    width: 32rem;
+    height: 22rem;
+}
+.Local:hover{
+    width: 62rem;
+    height: 26rem;
+}
+#menuTela h2:hover{
+    font-size: 4.0rem;
+}
+
+#BtnSeuPedido:hover{
+    width: 33.5rem;
+    height: 5.5rem;
+}
+#MobileMenu,#menu:hover{
+    height:6.5rem;
+    width: 5.5rem;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 40%;
+    }
+    nav {
+        display: none;
+    }
+    #MobileMenu, #menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 7rem;
+        width: 6rem;
+        display: flex;
+        background-color: var(--color-3);
+        border-radius: 25%;
+        justify-content: end;
+        padding: 1rem; 
+    }
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 85%;
+    }
+}
