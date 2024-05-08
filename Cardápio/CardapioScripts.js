@@ -181,3 +181,9 @@ BtnOfertas.addEventListener("click", Ofertas); // Remove the parentheses after O
 function Ofertas() {
     window.location.href = "/Pizzaria/Ofertas/ofertas.html";
 }
+var BtnContatos = document.getElementById("Contatos");
+BtnContatos.addEventListener("click", Contatos); 
+
+function Contatos() {
+    window.location.href = "/Pizzaria/Contatos/Contatos.html";
+}
